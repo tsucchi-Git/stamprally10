@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Leaflet@1.9.4 タイトルページに説明を追加</title>
+  	<meta charset="utf-8">
+  </head>
+  <style>
+    .title_image{
+      text-align:center;
+    }
+    .area_image{
+      text-align: center;
+      cursor:pointer;
+    }
+    .area_image_ng{
+      text-align: center;
+      cursor:pointer;
+    }
+  </style>
+  <body>
+    <p class="title_image">
+      <img src="title.jpg" width="100%" alt="タイトル画像">
+    </p>
+    <p class="area_image">
+      <img id="5_area"  width="100%" alt="タイトル画像">
+    </p>
+    <p class="area_image">
+      <img id="4_area"  width="100%" alt="タイトル画像">
+    </p>
+    <p class="area_image">
+      <img id="3_area"  width="100%" alt="タイトル画像">
+    </p>
+    <p class="area_image">
+      <img id="2_area"  width="100%" alt="タイトル画像">
+    </p>
+    <p class="area_image">
+      <img id="1_area"  width="100%" alt="タイトル画像">
+    </p>
+  </body>
+  <script>
+     var area5=document.getElementById("5_area");
+     area5.src="5_area.jpg";
+     area5.addEventListener("click",function(){
+        var url="https://tsucchi-git.github.io/stamprally05/index.html?_flag=" + 100 ;
+        window.location.href=url;
+     }
+    )
+     var area4=document.getElementById("4_area");
+     area4.src="4_area.jpg";
+     var area3=document.getElementById("3_area");
+     area3.src="3_area.jpg";
+     var area2=document.getElementById("2_area");
+     area2.src="2_area.jpg"; 
+     var area1=document.getElementById("1_area");
+     area1.src="1_area.jpg";
+     area1.addEventListener("click",function(){
+        var url="https://tsucchi-git.github.io/stamprally01/index.html?_flag=" + 100 ;
+        window.location.href=url;
+     }
+    )
+  </script>
+</html>
