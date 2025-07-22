@@ -60,6 +60,7 @@
      var area1=document.getElementById("1_area");
      area1.src="1_area.jpg";
      area1.addEventListener("click",function(){
+         localStorage.removeItem('visit_data%3');
         var url="https://tsucchi-git.github.io/stamprally01/index.html" ;
         window.location.href=url;
      }
